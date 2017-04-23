@@ -1,6 +1,7 @@
 const add = require('./adder.js');
 
-const Tests = {
+const Tests = () => {
+    return {
     runTest: function(testName) {
         const result = this[testName]();
         console.log(result, testName);
@@ -23,6 +24,8 @@ const Tests = {
     testAddNegativeAndPositiveNumbers: function() {
         return this.assertEquals(add(-5,7),2);
     },
-};
+}};
 
-Tests.runTests();
+let addingTests = Tests();
+addingTests.runTests();
+
