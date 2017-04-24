@@ -1,0 +1,23 @@
+{
+  "name": "addinator3000",
+  "version": "1.0.0",
+  "description": "Add App",
+  "main": "server/server.js",
+  "scripts": {
+    "postinstall": "browserify client/app.js -o client/bundle.js",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderPoet/addinator3000.git"
+  },
+  "author": "Po",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderPoet/addinator3000/issues"
+  },
+  "homepage": "https://github.com/AlexanderPoet/addinator3000#readme",
+  "dependencies": {
+    "browserify": "^14.3.0"
+  }
+}

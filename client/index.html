@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./bundle.js"></script>
 </head>
 <body>
     <form id="form-numbers" action="">
         <div>
         <label>Number 1</label>
-        <input id="num1" type="text" />
+        <input id="input-num1" type="text" size="3"/>
         </div>
         <div>
         <label>Number 2</label>
-        <input id="num2" type="text" />
+        <input id="input-num2" type="text" size="3"/>
+        </div>
+        <div>
+        <label>Sum</label>
+        <span id="sum"></span>
         </div>
         <input type="submit" value ="Calculate!" />
     </form>
+    <script src="bundle.js"></script>
 </body>
+
 </html>
